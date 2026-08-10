@@ -28,7 +28,7 @@ export default function Header() {
             <img
               src="/images/logo/easyaquatix-logo.png"
               alt="EasyAquatix"
-              className="h-10 w-auto group-hover:scale-105 transition-transform"
+              className="h-14 w-auto group-hover:scale-105 transition-transform"
             />
           </Link>
 

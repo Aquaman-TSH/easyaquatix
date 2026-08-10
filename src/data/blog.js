@@ -346,6 +346,8 @@ A seasonal checklist is only useful if you actually remember to run it. [Aquatic
     excerpt: 'Learn how to properly cycle your new aquarium to establish a healthy biological filter before adding fish.',
     content: `Cycling your aquarium is the most important step before adding any fish. This process establishes the beneficial bacteria needed to break down toxic ammonia and nitrite.
 
+Think of it this way: when you fill a brand-new tank, you're looking at a barren world. The water is sterile, lifeless — there's nothing there to sustain life yet. Cycling is how you terraform it. You're building a water world from scratch, seeding it with invisible colonists (beneficial bacteria) that will transform a hostile environment into one where fish can not only survive, but thrive. Every aquarium is a tiny planet, and you're the one making it habitable.
+
 ## Why Cycling Matters
 
 Without a proper nitrogen cycle, your fish are at risk of ammonia poisoning, which can be fatal within hours. The cycle typically takes 4-6 weeks.
@@ -379,19 +381,33 @@ The cycle is complete when:
 - Nitrite drops to 0 ppm within 24 hours
 - Nitrates are present
 
-## Watch the Nitrogen Cycle in Action
-
-!video[The Animated Nitrogen Cycle — U.S. Geological Survey (public domain)](https://www.youtube.com/watch?v=D64shbccE0s)
-
-This public-domain animation from the U.S. Geological Survey walks through the full nitrogen cycle — from ammonia and nitrite to nitrate — showing exactly what happens inside your tank's biological filter during the 4-6 week cycling period.
-
 ## Tips for Success
 
 - Keep the temperature warm
 - Don't clean your filter during the cycle
 - Be patient — rushing leads to dead fish
 
-Once cycled, do a large water change (80-90%) before adding your first fish.`,
+Once cycled, do a large water change (80-90%) before adding your first fish.
+
+## Frequently Asked Questions
+
+**How can I speed up the cycling process?**
+You can accelerate cycling by seeding your tank with established biomedia from a healthy, disease-free aquarium — this introduces a mature bacterial colony immediately. Keeping the temperature at 80-82°F (27-28°C) and ensuring good oxygenation also helps bacteria multiply faster. Bottled beneficial bacteria supplements (such as Tetra SafeStart or Dr. Tim's One & Only) can shorten the timeline, though results vary. Even with these shortcuts, plan on at least 2-3 weeks rather than the usual 4-6.
+
+**Can I add fish while cycling?**
+You can, but it's risky. "Fish-in cycling" exposes livestock to toxic ammonia and nitrite during the process. If you go this route, choose extremely hardy fish (like zebra danios), test the water daily, and perform frequent small water changes to keep toxins as low as possible. A fishless cycle is always the safer, more humane choice.
+
+**How do I know when my tank is fully cycled?**
+Your tank is cycled when you can dose 2 ppm of ammonia and it fully converts to nitrate within 24 hours — with both ammonia and nitrite reading 0 ppm at the end. Use a liquid test kit (not test strips) for accurate readings. Nitrates should be present, confirming the cycle is complete.
+
+**Do I need live plants during cycling?**
+No, plants aren't required, but they're beneficial. Live plants absorb nitrate as fertilizer, which helps control the final stage of the cycle. If you add them early, they'll also be well-established by the time you introduce fish.
+
+**Why did my cycle stall or my nitrite stay high for weeks?**
+A persistent nitrite spike is common and usually just means the *Nitrobacter/Nitrospira* bacteria are still catching up. Check that your pH hasn't dropped below 6.5 (low pH slows bacterial growth), make sure your filter is running 24/7, and be patient — the second bacterial colony often takes longer to establish than the first.
+
+**My established tank lost its cycle — how do I do an emergency recycle without killing my fish?**
+If your established tank has crashed (after a power outage, filter cleaning with tap water, or medication), you can perform an emergency recycle with fish still in the tank. Use an ammonia conditioner like Seachem Prime daily — it detoxifies ammonia for 24-48 hours, keeping your fish safe while your filter bacteria recover and repopulate. Dose the conditioner every 24 hours, test the water frequently, and perform small water changes as needed to keep ammonia and nitrite as low as possible. The filter will continue processing the non-toxic ammonia form, and within a week or two the bacterial colony should re-establish and the cycle will stabilize.`,
     author: 'EasyAquatix Team',
     date: '2025-12-15',
     readTime: '8 min read',
