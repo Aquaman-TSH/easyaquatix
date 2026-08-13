@@ -146,6 +146,21 @@ The EasyAquatix website is frontend-only — no API server and no proxy.
 
 ---
 
+## Newsletter provider decision (PENDING — pick ONE)
+
+The site currently has **two newsletter paths that do not talk to each other**:
+
+| Path | What it does | Where |
+|---|---|---|
+| **Formspree** | Newsletter signup forms POST directly to Formspree (`https://formspree.io/f/mljrngpr`) and drop submissions into a Formspree inbox/email. | `src/components/ui/NewsletterCTA.jsx`, `src/components/layout/Footer.jsx`, `src/pages/Contact.jsx` |
+| **Buttondown** | A Cloudflare Pages Function (`functions/api/subscribe.js`) forwards POSTs to the Buttondown API using `env.BUTTONDOWN_API_KEY`. **No form currently calls this endpoint** — it is deployed but unused. | `functions/api/subscribe.js`, `.env.example` |
+
+**Action needed:** decide on ONE provider and remove the other.
+- **Choose Buttondown** → point the three forms at `/api/subscribe`, add a hidden honeypot field named `website` to each form (the function silently drops requests that fill it), and delete the Formspree fetches.
+- **Choose Formspree** → delete `functions/api/subscribe.js` and remove the `BUTTONDOWN_API_KEY` env variable from Cloudflare Pages settings (`.env.example` can stay for reference or be removed).
+
+---
+
 ## Context / history (why it is set up this way)
 
 - Originally BOTH apps used ports 3001 (API) and 3005 (frontend). This caused port collisions, confusing Vite port jumps, and white screens.
