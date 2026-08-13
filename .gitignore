@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.wrangler/
+
+# Environment / secrets — never commit
+.env
+.env.local
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db

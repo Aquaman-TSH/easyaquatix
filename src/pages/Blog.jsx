@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { posts, getAllCategories } from '../data/blog'
 import BlogCard from '../components/ui/BlogCard'
 import NewsletterCTA from '../components/ui/NewsletterCTA'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 function formatDate(dateStr) {
   return new Date(dateStr).toLocaleDateString('en-US', {
@@ -18,13 +19,19 @@ export default function Blog() {
 
   const categories = getAllCategories()
 
+  usePageMeta({
+    title: 'Blog & Resources | EasyAquatix',
+    description: 'Tips, guides, and insights to help you become a better aquarist — water quality, maintenance, smart automation, and more.',
+  })
+
   // Newest first, newest featured post gets the hero slot
   const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date))
   const featured = sortedPosts.find((p) => p.featured) || sortedPosts[0]
-  const rest = sortedPosts.filter((p) => p.slug !== featured?.slug)
 
   const q = query.trim().toLowerCase()
-  const filtered = rest.filter((post) => {
+  const isFiltering = q !== '' || category !== 'All'
+
+  const filtered = sortedPosts.filter((post) => {
     const matchesCategory = category === 'All' || post.category === category
     const matchesQuery =
       !q ||
@@ -42,12 +49,12 @@ export default function Blog() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#0a1628] via-[#0e2a4a] to-[#0f3a5a] text-white">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent-400 rounded-full blur-3xl" />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 text-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Blog & Resources</h1>
           <p className="mt-4 text-lg text-primary-100 max-w-2xl mx-auto">
             Tips, guides, and insights to help you become a better aquarist
@@ -68,8 +75,19 @@ export default function Blog() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search guides, tips, and species..."
-                className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white/15 border border-white/25 text-white placeholder-primary-200 focus:outline-none focus:ring-2 focus:ring-white/50 text-sm backdrop-blur-sm"
+                className="w-full pl-12 pr-10 py-3.5 rounded-xl bg-white/15 border border-white/25 text-white placeholder-primary-200 focus:outline-none focus:ring-2 focus:ring-white/50 text-sm backdrop-blur-sm"
               />
+              {q && (
+                <button
+                  onClick={() => setQuery('')}
+                  aria-label="Clear search"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 rounded-full text-primary-200 hover:text-white hover:bg-white/10 transition-colors"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
             </div>
           </div>
         </div>
@@ -77,7 +95,7 @@ export default function Blog() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Featured Post */}
-        {featured && (
+        {!isFiltering && featured && (
           <section className="pt-12">
             <Link
               to={`/blog/${featured.slug}`}

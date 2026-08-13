@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { getPostBySlug, getRelatedPosts } from '../data/blog'
 import BlogCard from '../components/ui/BlogCard'
 import NewsletterCTA from '../components/ui/NewsletterCTA'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 function escapeHtml(str) {
   return str
@@ -215,6 +216,26 @@ export default function BlogPost() {
   const encodedUrl = encodeURIComponent(shareUrl)
   const encodedTitle = encodeURIComponent(post ? post.title : '')
 
+  usePageMeta({
+    title: post ? `${post.title} | EasyAquatix` : 'Post Not Found | EasyAquatix',
+    description: post ? post.excerpt : 'The blog post you are looking for does not exist or has been removed.',
+  })
+
+  const jsonLd = post
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: post.title,
+        description: post.excerpt,
+        image: post.image
+          ? (typeof window !== 'undefined' ? window.location.origin : '') + post.image
+          : undefined,
+        datePublished: post.date,
+        author: { '@type': 'Organization', name: 'EasyAquatix' },
+        publisher: { '@type': 'Organization', name: 'EasyAquatix' },
+      }
+    : null
+
   const handleCopyLink = async () => {
     try {
       await navigator.clipboard.writeText(shareUrl)
@@ -250,6 +271,9 @@ export default function BlogPost() {
 
   return (
     <div className="bg-white">
+      {jsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      )}
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Back Link */}
         <Link

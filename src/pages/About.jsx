@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function About() {
+  usePageMeta({
+    title: 'About Us | EasyAquatix',
+    description: 'EasyAquatix combines smart technology with expert knowledge to help aquarists maintain healthy, beautiful aquariums.',
+  })
+
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
+      <section className="bg-gradient-to-br from-[#0a1628] via-[#0e2a4a] to-[#0f3a5a] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">About EasyAquatix</h1>
           <p className="mt-6 text-lg text-primary-100 max-w-2xl mx-auto leading-relaxed">
@@ -86,13 +92,13 @@ export default function About() {
                   and sticky notes was tedious and error-prone. We knew there had to be a better way.
                 </p>
                 <p>
-                  In 2023, we launched Aquatic Sentinel — our flagship monitoring software — and it quickly became
+                  In 2025 we started development of Aquatic Sentinel — our flagship management software — and it quickly became
                   the go-to tool for aquarists who wanted a smarter, cleaner way to manage their tanks.
                 </p>
                 <p>
                   Since then, we've expanded our product line to include professional-grade tools, comprehensive
-                  guides, and utilities that cover every aspect of aquarium keeping. Our growing community of
-                  thousands of users inspires us to keep pushing boundaries.
+                  guides, and utilities that cover every aspect of aquarium keeping. Our growing community
+                  inspires us to keep pushing boundaries.
                 </p>
               </div>
             </div>

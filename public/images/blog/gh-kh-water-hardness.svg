@@ -1,0 +1,24 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GH & KH Water Hardness Guide">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e7490"/>
+      <stop offset="1" stop-color="#155e75"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="1100" cy="90" r="230" fill="#ffffff" opacity="0.06"/>
+  <circle cx="70" cy="670" r="270" fill="#ffffff" opacity="0.05"/>
+  <circle cx="600" cy="700" r="160" fill="#ffffff" opacity="0.04"/>
+  <path d="M0,590 C220,540 420,640 640,600 C840,562 1040,650 1200,600 L1200,750 L0,750 Z" fill="#ffffff" opacity="0.07"/>
+  <path d="M0,650 C240,610 460,700 700,660 C900,628 1080,700 1200,660 L1200,750 L0,750 Z" fill="#ffffff" opacity="0.05"/>
+  <rect x="500" y="108" width="200" height="44" rx="22" fill="#ffffff" opacity="0.14"/>
+  <text x="600" y="137" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="2" fill="#ffffff">WATER QUALITY</text>
+  <g transform="translate(600,310) scale(1.12)" stroke="#ffffff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-18 -70 L18 -70 L18 -12 L46 26 A 46 46 0 0 1 -46 26 L-18 -12 Z"/>
+    <line x1="-36" y1="12" x2="36" y2="12"/>
+    <circle cx="-20" cy="-44" r="4" fill="#ffffff" stroke="none"/>
+  </g>
+  <text x="600" y="636" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" font-weight="600" letter-spacing="6" fill="#ffffff" opacity="0.75">EASYAQUATIX</text>
+  <text x="600" y="688" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" letter-spacing="2" fill="#ffffff" opacity="0.55">BLOG &amp; RESOURCES</text>
+  <text x="600" y="540" text-anchor="middle" font-family="Inter, Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#ffffff">GH &amp; KH: Water Hardness</text>
+</svg>

@@ -5,14 +5,38 @@ export default function NewsletterCTA({
   subtitle = 'Get the latest aquarium tips, product updates, and exclusive offers delivered to your inbox.',
 }) {
   const [email, setEmail] = useState('')
-  const [subscribed, setSubscribed] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState('idle') // 'idle' | 'loading' | 'success' | 'error'
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    if (email.trim()) {
-      setSubscribed(true)
-      setEmail('')
-      setTimeout(() => setSubscribed(false), 4000)
+    const cleanEmail = email.trim()
+    if (!cleanEmail) return
+    setSubmitStatus('loading')
+
+    try {
+      const response = await fetch('https://formspree.io/f/mljrngpr', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: cleanEmail,
+          subject: 'Newsletter Signup',
+          message: 'Subscription request from the homepage newsletter form.',
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setEmail('')
+        setTimeout(() => setSubmitStatus('idle'), 5000)
+      } else {
+        setSubmitStatus('error')
+        setTimeout(() => setSubmitStatus('idle'), 5000)
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+      setTimeout(() => setSubmitStatus('idle'), 5000)
     }
   }
 
@@ -38,14 +62,42 @@ export default function NewsletterCTA({
               />
               <button
                 type="submit"
-                className="px-8 py-3 rounded-lg bg-white text-primary-700 font-semibold text-sm hover:bg-primary-50 transition-colors shadow-lg"
+                disabled={submitStatus === 'loading'}
+                className="px-8 py-3 rounded-lg bg-white text-primary-700 font-semibold text-sm hover:bg-primary-50 transition-colors shadow-lg disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
-                Subscribe
+                {submitStatus === 'loading' && (
+                  <svg
+                    className="animate-spin h-4 w-4 text-primary-700"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                    />
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                    />
+                  </svg>
+                )}
+                {submitStatus === 'loading' ? 'Subscribing...' : 'Subscribe'}
               </button>
             </form>
-            {subscribed && (
+            {submitStatus === 'success' && (
               <p className="mt-4 text-primary-100 text-sm font-medium">
                 Thanks for subscribing — welcome aboard!
+              </p>
+            )}
+            {submitStatus === 'error' && (
+              <p className="mt-4 text-red-200 text-sm font-medium">
+                Couldn't subscribe right now. Please try again.
               </p>
             )}
             <p className="mt-4 text-primary-200 text-xs">No spam. Unsubscribe anytime.</p>

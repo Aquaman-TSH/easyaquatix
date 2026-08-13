@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -7,21 +8,53 @@ export default function Contact() {
     subject: '',
     message: '',
   })
+  const [submitStatus, setSubmitStatus] = useState('idle') // 'idle' | 'loading' | 'success' | 'error'
+
+  usePageMeta({
+    title: 'Contact Us | EasyAquatix',
+    description: 'Have a question, feedback, or need support? Contact the EasyAquatix team — we respond within 24 hours.',
+  })
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    alert('Thank you for your message! We\'ll get back to you soon.')
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    setSubmitStatus('loading')
+
+    try {
+      const response = await fetch('https://formspree.io/f/mljrngpr', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+        setTimeout(() => setSubmitStatus('idle'), 5000)
+      } else {
+        setSubmitStatus('error')
+        setTimeout(() => setSubmitStatus('idle'), 5000)
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+      setTimeout(() => setSubmitStatus('idle'), 5000)
+    }
   }
 
   const faqs = [
     {
       question: 'What platforms does Aquatic Sentinel support?',
-      answer: 'Aquatic Sentinel runs on Windows, macOS, and Linux. Aquatic Sentinel Pro includes the same cross-platform support with additional cloud sync features.',
+      answer: 'Aquatic Sentinel runs locally on Windows™ currently. For remote users using phones and other mobile devices, it will run on devices that run Android™, iPhone®/iOS®, macOS®, Linux and others that support standard web browsers.',
     },
     {
       question: 'Do you offer refunds?',
@@ -33,14 +66,14 @@ export default function Contact() {
     },
     {
       question: 'Can I use Aquatic Sentinel for multiple tanks?',
-      answer: 'Absolutely! Both the standard and Pro versions support multiple tanks. You can switch between tanks, view them individually, or see a combined dashboard.',
+      answer: 'Absolutely! The Pro version supports multiple tanks. (We\'ve tested up to 200 tanks) You can switch between tanks, view them individually, or see a combined dashboard. Note that the Lite version is limited to 1 tank.',
     },
   ]
 
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-16">
+      <section className="bg-gradient-to-br from-[#0a1628] via-[#0e2a4a] to-[#0f3a5a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Contact Us</h1>
           <p className="mt-4 text-lg text-primary-100 max-w-2xl mx-auto">
@@ -119,12 +152,106 @@ export default function Contact() {
                     placeholder="Tell us what's on your mind..."
                   />
                 </div>
-                <button
-                  type="submit"
-                  className="px-8 py-3.5 rounded-lg bg-primary-600 text-white font-semibold text-sm hover:bg-primary-700 transition-colors shadow-lg shadow-primary-600/25"
-                >
-                  Send Message
-                </button>
+                <div className="relative">
+                  <button
+                    type="submit"
+                    disabled={submitStatus === 'loading'}
+                    className="w-full px-8 py-3.5 rounded-lg bg-primary-600 text-white font-semibold text-sm hover:bg-primary-700 transition-colors shadow-lg shadow-primary-600/25 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  >
+                    {submitStatus === 'loading' && (
+                      <svg
+                        className="animate-spin h-4 w-4 text-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        />
+                      </svg>
+                    )}
+                    {submitStatus === 'loading' ? 'Sending...' : 'Send Message'}
+
+                    {submitStatus === 'success' && (
+                      <svg
+                        className="h-4 w-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    )}
+                  </button>
+
+                  {submitStatus === 'success' && (
+                    <div className="mt-3 p-4 bg-green-50 border border-green-200 rounded-xl">
+                      <div className="flex items-start gap-3">
+                        <svg
+                          className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 12l2 2l4-4m5.617 4.835c.041-.322.041-.644 0-.966A11.993 11.993 0 0012 5c-2.34 0-4.526.762-6.343 2.077l-.014.01A8.992 8.992 0 003 12c0 1.657.447 3.228 1.238 4.573.04.067.08.133.122.199l.001-.002c.244.41.548.783.902 1.106l.007.007L12 20l7.737-4.467c.354-.323.658-.7.897-1.115A12.003 12.003 0 0016.835 7.835z"
+                          />
+                        </svg>
+                        <div>
+                          <p className="text-sm font-medium text-green-800">Message sent!</p>
+                          <p className="text-sm text-green-600 mt-1">
+                            Thank you for your message! We'll get back to you soon.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {submitStatus === 'error' && (
+                    <div className="mt-3 p-4 bg-red-50 border border-red-200 rounded-xl">
+                      <div className="flex items-start gap-3">
+                        <svg
+                          className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 9v2m0 4h.01m-.01-6.756a9 9 0 11-1.8 0m0 0l3-3m-3 3l-3 3"
+                          />
+                        </svg>
+                        <div>
+                          <p className="text-sm font-medium text-red-800">Message failed to send</p>
+                          <p className="text-sm text-red-600 mt-1">
+                            Something went wrong. Please try again or email us at
+                            support@easyaquatix.com.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </form>
             </div>
 

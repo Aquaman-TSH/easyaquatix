@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
 
 function StarRating({ rating = 0 }) {
@@ -21,7 +21,13 @@ function StarRating({ rating = 0 }) {
 }
 
 export default function ProductCard({ product }) {
+  const navigate = useNavigate()
   const { addItem } = useCart()
+
+  const handleViewDetails = () => {
+    navigate(`/product/${slug}`)
+    window.scrollTo(0, 0)
+  }
 
   const {
     slug,
@@ -74,27 +80,36 @@ export default function ProductCard({ product }) {
         )}
 
         {/* Price */}
-        <div className="flex items-baseline gap-2 mb-4">
+        <div className="relative flex items-baseline gap-2 mb-4">
           <span className="text-xl font-bold text-teal-600">${price?.toFixed(2)}</span>
           {originalPrice && (
             <span className="text-sm text-gray-400 line-through">${originalPrice.toFixed(2)}</span>
           )}
+          <div className="absolute left-16 top-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none">
+            <img
+              src="/images/shop/price-badge.svg"
+              alt="Free during Beta"
+              className="w-36 h-auto opacity-90"
+            />
+          </div>
         </div>
 
         {/* Actions */}
         <div className="flex gap-2 mt-auto">
-          <Link
-            to={`/product/${slug}`}
+          <button
+            onClick={handleViewDetails}
             className="flex-1 text-center px-4 py-2.5 text-sm font-medium text-teal-600 bg-teal-50 rounded-xl hover:bg-teal-100 transition-colors"
           >
             View Details
-          </Link>
-          <button
-            onClick={() => addItem(product)}
-            className="flex-1 px-4 py-2.5 text-sm font-medium text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors"
-          >
-            Add to Cart
           </button>
+          <a
+            href="https://github.com/Aquaman-TSH/aquasentinel-releases/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 text-center px-4 py-2.5 text-sm font-medium text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-colors"
+          >
+            Download Beta Now
+          </a>
         </div>
       </div>
     </div>

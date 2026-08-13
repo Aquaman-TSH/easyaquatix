@@ -1,15 +1,21 @@
 import { useState } from 'react'
 import { categories, getProductsByCategory } from '../data/products'
 import ProductCard from '../components/ui/ProductCard'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Shop() {
   const [activeCategory, setActiveCategory] = useState('all')
+
+  usePageMeta({
+    title: 'Shop | EasyAquatix',
+    description: 'Explore EasyAquatix software tools and guides to build and maintain the perfect aquarium.',
+  })
   const filteredProducts = getProductsByCategory(activeCategory)
 
   return (
     <div>
       {/* Page Header */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-16">
+      <section className="bg-gradient-to-br from-[#0a1628] via-[#0e2a4a] to-[#0f3a5a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Our Products</h1>
           <p className="mt-4 text-lg text-primary-100 max-w-2xl mx-auto">

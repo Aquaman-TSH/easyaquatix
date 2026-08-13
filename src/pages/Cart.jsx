@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Cart() {
   const { items, removeItem, updateQuantity, totalPrice, clearCart } = useCart()
+
+  usePageMeta({
+    title: 'Your Cart | EasyAquatix',
+    description: 'Review the items in your EasyAquatix cart and check out securely with Lemon Squeezy.',
+  })
 
   const handleCheckout = () => {
     const checkoutUrl = 'https://YOUR_STORE.lemonsqueezy.com/checkout/buy'
@@ -12,7 +18,7 @@ export default function Cart() {
   if (items.length === 0) {
     return (
       <div>
-        <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-16">
+        <section className="bg-gradient-to-br from-[#0a1628] via-[#0e2a4a] to-[#0f3a5a] text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Your Cart</h1>
           </div>
@@ -44,7 +50,7 @@ export default function Cart() {
 
   return (
     <div>
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-16">
+      <section className="bg-gradient-to-br from-[#0a1628] via-[#0e2a4a] to-[#0f3a5a] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Your Cart</h1>
           <p className="mt-3 text-primary-100">

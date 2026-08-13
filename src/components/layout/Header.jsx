@@ -6,6 +6,11 @@ const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/shop', label: 'Shop' },
   { to: '/blog', label: 'Blog' },
+  { to: '/care-guides', label: 'Care Guides' },
+  { to: '/tools', label: 'Aquarium Tools' },
+  { to: '/humor', label: 'Humor' },
+  { to: '/downloads', label: 'Downloads' },
+  { to: '/support', label: 'Support' },
   { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
 ]
@@ -22,13 +27,13 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-21">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <img
               src="/images/logo/easyaquatix-logo.png"
               alt="EasyAquatix"
-              className="h-14 w-auto group-hover:scale-105 transition-transform"
+              className="h-21 w-auto group-hover:scale-105 transition-transform"
             />
           </Link>
 
