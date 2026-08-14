@@ -235,22 +235,22 @@ export default function ProductDetail() {
               Real screenshots of Aquatic Sentinel in action
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
             {screenshots.map((shot, index) => (
               <button
                 key={shot.src}
                 onClick={() => openLightbox(index)}
                 className="group relative rounded-2xl overflow-hidden border border-gray-100 bg-gray-50 shadow-sm hover:shadow-xl hover:border-teal-200 transition-all duration-300 text-left"
               >
-                <div className="bg-white p-3 sm:p-4">
+                <div className="aspect-[4/3] overflow-hidden">
                   <img
                     src={shot.src}
                     alt={shot.caption}
                     loading="lazy"
-                    className="w-full h-auto object-contain rounded-lg group-hover:opacity-95 transition-opacity duration-300"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="px-5 py-4 bg-white border-t border-gray-100">
+                <div className="px-4 py-3 bg-white">
                   <p className="text-sm font-medium text-gray-700">{shot.caption}</p>
                 </div>
               </button>

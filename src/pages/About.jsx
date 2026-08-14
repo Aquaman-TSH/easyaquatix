@@ -97,8 +97,8 @@ export default function About() {
                 </p>
                 <p>
                   Since then, we've expanded our product line to include professional-grade tools, comprehensive
-                  guides, and utilities that cover every aspect of aquarium keeping. Our growing community
-                  inspires us to keep pushing boundaries.
+                  guides, and utilities that cover every aspect of aquarium keeping. Our growing community of
+                  thousands of users inspires us to keep pushing boundaries.
                 </p>
               </div>
             </div>

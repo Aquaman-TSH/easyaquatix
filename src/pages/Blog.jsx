@@ -27,11 +27,10 @@ export default function Blog() {
   // Newest first, newest featured post gets the hero slot
   const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date))
   const featured = sortedPosts.find((p) => p.featured) || sortedPosts[0]
+  const rest = sortedPosts.filter((p) => p.slug !== featured?.slug)
 
   const q = query.trim().toLowerCase()
-  const isFiltering = q !== '' || category !== 'All'
-
-  const filtered = sortedPosts.filter((post) => {
+  const filtered = rest.filter((post) => {
     const matchesCategory = category === 'All' || post.category === category
     const matchesQuery =
       !q ||
@@ -75,19 +74,8 @@ export default function Blog() {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search guides, tips, and species..."
-                className="w-full pl-12 pr-10 py-3.5 rounded-xl bg-white/15 border border-white/25 text-white placeholder-primary-200 focus:outline-none focus:ring-2 focus:ring-white/50 text-sm backdrop-blur-sm"
+                className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white/15 border border-white/25 text-white placeholder-primary-200 focus:outline-none focus:ring-2 focus:ring-white/50 text-sm backdrop-blur-sm"
               />
-              {q && (
-                <button
-                  onClick={() => setQuery('')}
-                  aria-label="Clear search"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 rounded-full text-primary-200 hover:text-white hover:bg-white/10 transition-colors"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              )}
             </div>
           </div>
         </div>
@@ -95,7 +83,7 @@ export default function Blog() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Featured Post */}
-        {!isFiltering && featured && (
+        {featured && (
           <section className="pt-12">
             <Link
               to={`/blog/${featured.slug}`}
