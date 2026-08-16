@@ -46,6 +46,18 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 pb-28 sm:pb-36 lg:pb-44">
           <div className="max-w-3xl">
+            <a
+              href="https://as.easyaquatix.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/25 text-sm text-primary-100 font-medium hover:bg-white/20 transition-colors mb-6 pill-glow"
+            >
+              <span className="w-2 h-2 rounded-full bg-accent-400" />
+              New: the Aquatic Sentinel app is live
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M7 7h10v10" />
+              </svg>
+            </a>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
               <span className="shimmer-text">Smart Solutions for</span>{' '}
               <span className="shimmer-text">Your Aquarium</span>
