@@ -53,7 +53,7 @@ export default function Home() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/25 text-sm text-primary-100 font-medium hover:bg-white/20 transition-colors mb-6 pill-glow"
             >
               <span className="w-2 h-2 rounded-full bg-accent-400" />
-              New: the Aquatic Sentinel app is live
+              New: the Aquatic Sentinel Web Site is live
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M7 7h10v10" />
               </svg>

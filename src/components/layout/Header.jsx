@@ -48,22 +48,6 @@ export default function Header() {
 
           {/* Right actions */}
           <div className="flex items-center gap-4">
-            {/* Aquatic Sentinel app pill */}
-            <a
-              href="https://as.easyaquatix.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden lg:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-600 to-accent-600 text-white text-sm font-semibold shadow-lg shadow-primary-600/30 hover:scale-105 hover:shadow-primary-600/50 transition-all pill-glow"
-            >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0L12 2.69z" />
-              </svg>
-              Aquatic Sentinel
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M7 7h10v10" />
-              </svg>
-            </a>
-
             {/* Cart */}
             <Link
               to="/cart"
@@ -109,15 +93,6 @@ export default function Header() {
       {menuOpen && (
         <nav className="md:hidden border-t border-gray-100 bg-white">
           <div className="px-4 py-3 space-y-1">
-            <a
-              href="https://as.easyaquatix.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
-              className="block px-3 py-2.5 rounded-lg bg-gradient-to-r from-primary-600 to-accent-600 text-white font-semibold text-sm text-center shadow-lg mb-3"
-            >
-              Explore the Aquatic Sentinel App
-            </a>
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
