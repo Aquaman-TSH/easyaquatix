@@ -201,7 +201,7 @@ export default function Blog() {
       {/* Newsletter */}
       <NewsletterCTA
         title="Never Miss a Guide"
-        subtitle="Join the EasyAquatix newsletter for aquarium tips, product updates, and exclusive offers — straight to your inbox."
+        subtitle="Join the Easy Aquatix newsletter for aquarium tips, product updates, and exclusive offers — straight to your inbox."
       />
     </div>
   )

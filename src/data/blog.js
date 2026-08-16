@@ -52,7 +52,7 @@ Testing daily and writing readings in a notebook works — for about three weeks
 That's the gap [Aquatic Sentinel](/product/aquatic-sentinel) was built to close: log your readings, set custom thresholds for each parameter, and get alerted the moment something drifts out of range — before the symptom becomes a casualty. You still test; the software just remembers to care when you're busy.
 
 > The best alert is the one that fires while you still have time to fix the problem.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-12',
     readTime: '7 min read',
     category: 'Water Quality',
@@ -96,7 +96,7 @@ If you run multiple tanks, you need a quarantine tank — and it's non-negotiabl
 The point of multiple tanks is more beauty, more learning, and more fun — not more chores. A little structure in the tracking is what keeps it that way.
 
 > You don't need more memory. You need fewer surprises.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-19',
     readTime: '6 min read',
     category: 'Software & Tools',
@@ -152,7 +152,7 @@ Stop doing long division with tank volumes. The [Aquarium Water Calculator](/too
 - If you miss a week, don't double-change; just resume the schedule
 
 > A 10-minute habit beats a two-hour rescue every single time.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-26',
     readTime: '5 min read',
     category: 'Maintenance',
@@ -216,7 +216,7 @@ Choose **reef** if you:
 Before either, nail the fundamentals. The [Freshwater Aquarium Guide](/product/freshwater-aquarium-guide) covers 200+ species profiles and full aquascaping technique chapters — a fraction of the cost of one beginner mistake in a reef tank.
 
 > Advanced setups don't fail from lack of effort. They fail from lack of data.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-09-09',
     readTime: '8 min read',
     category: 'Advanced Aquatics',
@@ -272,7 +272,7 @@ Honestly? For a single community tank, cloud sync is nice-to-have. But if you an
 [Aquatic Sentinel](/product/aquatic-sentinel) includes cloud sync, API integration for smart devices, and an advanced analytics dashboard on top of the full feature set. The goal isn't more complexity — it's making your data work for you instead of sitting in a folder.
 
 > Your tank is a system. Treat its data like one.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-09-23',
     readTime: '7 min read',
     category: 'Software & Tools',
@@ -332,7 +332,7 @@ Fall is when many of us start traveling. Set up your maintenance schedule before
 ## Make It Stick
 
 A seasonal checklist is only useful if you actually remember to run it. [Aquatic Sentinel](/product/aquatic-sentinel) lets you log every reading, schedule maintenance reminders, and spot a drift while it's still a small fix — so fall never becomes a crisis. New to the hobby? The [Freshwater Aquarium Guide](/product/freshwater-aquarium-guide) has a full troubleshooting section for seasonal changes.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-10-07',
     readTime: '6 min read',
     category: 'Maintenance',
@@ -408,7 +408,7 @@ A persistent nitrite spike is common and usually just means the *Nitrobacter/Nit
 
 **My established tank lost its cycle — how do I do an emergency recycle without killing my fish?**
 If your established tank has crashed (after a power outage, filter cleaning with tap water, or medication), you can perform an emergency recycle with fish still in the tank. Use an ammonia conditioner like Seachem Prime daily — it detoxifies ammonia for 24-48 hours, keeping your fish safe while your filter bacteria recover and repopulate. Dose the conditioner every 24 hours, test the water frequently, and perform small water changes as needed to keep ammonia and nitrite as low as possible. The filter will continue processing the non-toxic ammonia form, and within a week or two the bacterial colony should re-establish and the cycle will stabilize.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2025-12-15',
     readTime: '8 min read',
     category: 'Getting Started',
@@ -478,7 +478,7 @@ If your established tank has crashed (after a power outage, filter cleaning with
 - Always research specific needs before buying
 - Test your water weekly
 - Use Aquatic Sentinel to track parameters!`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-01-08',
     readTime: '6 min read',
     category: 'Fish Care',
@@ -527,7 +527,7 @@ If your established tank has crashed (after a power outage, filter cleaning with
 ## Using Aquatic Sentinel
 
 Aquatic Sentinel makes tracking these parameters effortless. Log your readings, visualize trends, and get alerts when parameters drift out of range.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-02-20',
     readTime: '10 min read',
     category: 'Water Quality',
@@ -603,7 +603,7 @@ The hobby runs on patience. Adding fish too soon, overstocking, feeding too much
 **Fix:** Slow down. Establish routines, observe daily, and change only one thing at a time. The healthiest tanks are the ones built gradually.
 
 > The aquarium hobby doesn't reward effort — it rewards consistency.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-20',
     readTime: '6 min read',
     category: 'Getting Started',
@@ -674,7 +674,7 @@ Breeding is the most fun part. Neocaridina females carry eggs under their tail f
 If your tank is stable and planted, breeding is basically automatic — you just have to not mess it up.
 
 > Shrimp don't reward effort. They reward stability.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-21',
     readTime: '6 min read',
     category: 'Fish Care',
@@ -737,7 +737,7 @@ Test hardness whenever you set up a tank, whenever you switch water sources, and
 Always adjust slowly. Rapid swings are more harmful than imperfect-but-stable parameters.
 
 > Stability beats perfection — every time.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-24',
     readTime: '5 min read',
     category: 'Water Quality',
@@ -819,7 +819,7 @@ Actually bacteria, not algae. Smelly slime that thrives in organics-heavy, low-o
 - **Track nitrates:** if nitrate keeps climbing despite water changes, your maintenance isn't keeping up. Log your readings to catch it before the algae does — that's exactly what [Aquatic Sentinel](/product/aquatic-sentinel) alert thresholds are for.
 
 > You don't beat algae in a day. You beat it by giving the tank what it's missing.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-26',
     readTime: '6 min read',
     category: 'Maintenance',
@@ -887,7 +887,7 @@ Wipe heater and thermometer to keep them reading true and working efficiently. C
 That's it. Do this monthly on top of your [weekly water change routine](/blog/10-minute-weekly-water-change-routine), and your tank stays stable, clean, and healthy year-round.
 
 > A clean tank is a stable tank. A stable tank is a healthy tank.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-28',
     readTime: '5 min read',
     category: 'Maintenance',
@@ -958,7 +958,7 @@ Write it down. A clear, printed note beats an anxious text exchange:
 - Resume normal feeding gradually — don't celebrate your return with a feast
 
 > The best vacation strategy is a tank that needs nothing while you're gone.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-09-01',
     readTime: '6 min read',
     category: 'Maintenance',
@@ -1023,7 +1023,7 @@ Caridina shrimp, breeding pairs, and reef tanks demand a tighter schedule — we
 The perfect schedule is the one you'll actually follow. A weekly routine you keep beats a daily routine you abandon. Write your readings down (paper, spreadsheet, or an app) so you can spot trends — a slow drift in nitrate or KH is exactly the kind of "small thing" that becomes a disaster if nobody's watching.
 
 > Testing isn't about perfection. It's about catching the slow drifts before they become emergencies.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-09-04',
     readTime: '5 min read',
     category: 'Water Quality',
@@ -1086,7 +1086,7 @@ Controllers that adjust pH, CO2, or temperature automatically exist, but they're
 5. **Week 6:** review two weeks of data — you'll see trends you never noticed before
 
 > The goal isn't more gadgets. It's a tank that stays stable even when you're busy.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-09-08',
     readTime: '6 min read',
     category: 'Software & Tools',
@@ -1173,7 +1173,7 @@ Whatever path you choose, structure beats decoration:
 In six months you'll know exactly whether you want to take the high-tech plunge — and your low-tech tank will still be beautiful while you decide.
 
 > Every masterpiece tank started as a "just try it" tank.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-09-12',
     readTime: '6 min read',
     category: 'Advanced Aquatics',
@@ -1242,7 +1242,7 @@ If symptoms appear in QT, you can treat properly:
 The beauty of QT: medication never touches your display tank, your beneficial bacteria, or your other fish.
 
 > The quarantine tank isn't for sick fish. It's for everything you don't know yet.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-09-16',
     readTime: '6 min read',
     category: 'Fish Care',
@@ -1300,7 +1300,7 @@ Water changes in a nano tank take less than 10 minutes, which makes them the mos
 The best small-tank secret: **shrimp.** Neocaridina shrimp in a 5-gallon planted cube with some moss is one of the most satisfying setups in the hobby — active, colorful, self-sustaining, and they breed in exactly the environment a nano tank provides. See the [shrimp guide](/blog/shrimp-keeping-guide-caridina-vs-neocaridina) for the water parameters they need.
 
 > Small tank, small mistakes. Prepare like it's bigger than it is, and it'll be the best thing on your desk.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-09-22',
     readTime: '6 min read',
     category: 'Advanced Aquatics',
@@ -1371,7 +1371,7 @@ Summer is peak vacation season, which means the two risk factors stack. Run the 
 6. Keep a cooling plan for your fish room, not just the tank
 
 > Summer isn't the season to coast. It's the season to be ready.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-09-28',
     readTime: '6 min read',
     category: 'Maintenance',
@@ -1520,7 +1520,7 @@ Every successful aquarist got where they are by building a simple system and sti
 You don't need to understand everything before you start. You need a place to put the numbers — and a safety net for the days you don't.
 
 > The best time to start tracking your water is when you set up the tank. The second best time is today.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-10-02',
     readTime: '6 min read',
     category: 'Software & Tools',
@@ -1766,7 +1766,7 @@ Advanced husbandry is a loop: **log → analyze → schedule → automate → ac
 If you're already keeping a spreadsheet or a notebook, you've built half this system by hand. The software just makes the other half possible.
 
 > The tank that keeps records is a tank you understand.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-10-05',
     readTime: '11 min read',
     category: 'Software & Tools',
@@ -1907,7 +1907,7 @@ All five species are peaceful enough to share a community tank, but the exact mi
 ## The Bottom Line
 
 The betta, neon tetra, corydoras, guppy, and zebra danio are the five best first fish in the hobby for one shared reason: they forgive beginner mistakes while still rewarding good care. Pick one, set the tank up right, and give the [10 common beginner mistakes](/blog/10-common-beginner-fishkeeping-mistakes) a read — then enjoy the easiest, most colorful first aquarium you can build.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-13',
     readTime: '9 min read',
     category: 'Fish Care',
@@ -1987,7 +1987,7 @@ Total starter cost: roughly $50-80 — less than the first batch of fish, and it
 If you only buy one item today, make it the heater — no amount of testing fixes cold water. Then add the digital thermometer, then the temperature monitor, then the gravel vacuum. In that order you are protecting your investment at every step.
 
 The full breakdown of every pick, including what to look for when you shop, lives on our [Recommended Hardware page](/hardware). And if you are still choosing your first fish, our [Top 5 Beginner Fish Care Guide](/blog/top-5-beginner-fish-care-guide) covers the species that pair best with this gear.`,
-    author: 'EasyAquatix Team',
+    author: 'Easy Aquatix Team',
     date: '2026-08-13',
     readTime: '7 min read',
     category: 'Getting Started',

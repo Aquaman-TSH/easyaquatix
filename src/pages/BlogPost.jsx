@@ -231,8 +231,8 @@ export default function BlogPost() {
           ? (typeof window !== 'undefined' ? window.location.origin : '') + post.image
           : undefined,
         datePublished: post.date,
-        author: { '@type': 'Organization', name: 'EasyAquatix' },
-        publisher: { '@type': 'Organization', name: 'EasyAquatix' },
+        author: { '@type': 'Organization', name: 'Easy Aquatix' },
+        publisher: { '@type': 'Organization', name: 'Easy Aquatix' },
       }
     : null
 

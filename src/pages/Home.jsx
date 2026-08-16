@@ -24,7 +24,7 @@ export default function Home() {
 
   usePageMeta({
     title: 'Easy Aquatix - Smart Aquarium Solutions',
-    description: 'EasyAquatix helps aquarists monitor water parameters, track maintenance, and keep aquatic environments thriving with intelligent software and expert guides.',
+    description: 'Easy Aquatix helps aquarists monitor water parameters, track maintenance, and keep aquatic environments thriving with intelligent software and expert guides.',
   })
 
   return (
@@ -159,7 +159,7 @@ export default function Home() {
       <section className="py-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimSection className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Why EasyAquatix?</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Why Easy Aquatix?</h2>
             <p className="mt-3 text-lg text-gray-500 max-w-2xl mx-auto">
               We are dedicated to making products that make aquarium keeping easier and more intelligent with the goal of making you more successful and happier as a aquarist
             </p>

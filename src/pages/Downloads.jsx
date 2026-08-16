@@ -4,7 +4,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 export default function Downloads() {
   usePageMeta({
     title: 'Downloads | Easy Aquatix',
-    description: 'Download the latest EasyAquatix software and resources, including Aquatic Sentinel for Windows.',
+    description: 'Download the latest Easy Aquatix software and resources, including Aquatic Sentinel for Windows.',
   })
 
   return (
@@ -14,7 +14,7 @@ export default function Downloads() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Downloads</h1>
           <p className="mt-4 text-lg text-primary-100 max-w-2xl mx-auto">
-            Get the latest EasyAquatix software and resources
+            Get the latest Easy Aquatix software and resources
           </p>
         </div>
       </section>

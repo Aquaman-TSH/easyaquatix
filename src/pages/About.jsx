@@ -4,7 +4,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 export default function About() {
   usePageMeta({
     title: 'About Us | Easy Aquatix',
-    description: 'EasyAquatix combines smart technology with expert knowledge to help aquarists maintain healthy, beautiful aquariums.',
+    description: 'Easy Aquatix combines smart technology with expert knowledge to help aquarists maintain healthy, beautiful aquariums.',
   })
 
   return (
@@ -12,7 +12,7 @@ export default function About() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#0a1628] via-[#0e2a4a] to-[#0f3a5a] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">About EasyAquatix</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">About Easy Aquatix</h1>
           <p className="mt-6 text-lg text-primary-100 max-w-2xl mx-auto leading-relaxed">
             We're passionate about making aquarium keeping easier, smarter, and more enjoyable for everyone.
           </p>
@@ -24,7 +24,7 @@ export default function About() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Our Mission</h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            Every aquarist deserves the right tools to keep their underwater world thriving. EasyAquatix was founded
+            Every aquarist deserves the right tools to keep their underwater world thriving. Easy Aquatix was founded
             with a simple goal: combine smart technology with expert knowledge to help you maintain healthy,
             beautiful aquariums — whether you're just starting out or managing multiple tanks.
           </p>
@@ -36,10 +36,10 @@ export default function About() {
         </div>
       </section>
 
-      {/* Why EasyAquatix */}
+      {/* Why Easy Aquatix */}
       <section className="py-20 bg-gray-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-16">Why EasyAquatix?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-16">Why Easy Aquatix?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
               <div className="w-14 h-14 rounded-xl bg-primary-100 text-primary-600 flex items-center justify-center mb-6">
@@ -88,7 +88,7 @@ export default function About() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  EasyAquatix started from a simple frustration: tracking aquarium water parameters with spreadsheets
+                  Easy Aquatix started from a simple frustration: tracking aquarium water parameters with spreadsheets
                   and sticky notes was tedious and error-prone. We knew there had to be a better way.
                 </p>
                 <p>
@@ -120,7 +120,7 @@ export default function About() {
             Ready to Upgrade Your Aquarium?
           </h2>
           <p className="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
-            Explore our products and see how EasyAquatix can help you maintain a healthier, more beautiful aquarium.
+            Explore our products and see how Easy Aquatix can help you maintain a healthier, more beautiful aquarium.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

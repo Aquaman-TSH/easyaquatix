@@ -7,7 +7,7 @@ export default function Cart() {
 
   usePageMeta({
     title: 'Your Cart | Easy Aquatix',
-    description: 'Review the items in your EasyAquatix cart and check out securely with Lemon Squeezy.',
+    description: 'Review the items in your Easy Aquatix cart and check out securely with Lemon Squeezy.',
   })
 
   const handleCheckout = () => {

@@ -32,7 +32,7 @@ export default function Header() {
           <Link to="/" className="flex items-center gap-2 group">
             <img
               src="/images/logo/easyaquatix-logo.png"
-              alt="EasyAquatix"
+              alt="Easy Aquatix"
               className="h-21 w-auto group-hover:scale-105 transition-transform"
             />
           </Link>

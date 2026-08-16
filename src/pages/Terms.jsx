@@ -3,17 +3,17 @@ import { usePageMeta } from '../hooks/usePageMeta'
 export default function Terms() {
   usePageMeta({
     title: 'Terms of Service | Easy Aquatix',
-    description: 'The terms of service that govern your use of easyaquatix.com and EasyAquatix products, including Aquatic Sentinel.',
+    description: 'The terms of service that govern your use of easyaquatix.com and Easy Aquatix products, including Aquatic Sentinel.',
   })
 
   const sections = [
     {
       title: '1. Acceptance of Terms',
-      body: 'By accessing this website or purchasing or using any EasyAquatix product, including Aquatic Sentinel, you agree to these Terms of Service. If you do not agree, please do not use the website or our products.',
+      body: 'By accessing this website or purchasing or using any Easy Aquatix product, including Aquatic Sentinel, you agree to these Terms of Service. If you do not agree, please do not use the website or our products.',
     },
     {
       title: '2. Description of Services',
-      body: "EasyAquatix provides digital products for aquarium enthusiasts, including aquarium management software and guides. Aquatic Sentinel is currently offered free of charge during its beta period and is designed to run locally on Windows™. Future versions, editions, and pricing are subject to change.",
+      body: "Easy Aquatix provides digital products for aquarium enthusiasts, including aquarium management software and guides. Aquatic Sentinel is currently offered free of charge during its beta period and is designed to run locally on Windows™. Future versions, editions, and pricing are subject to change.",
     },
     {
       title: '3. Purchases and Payments',
@@ -37,7 +37,7 @@ export default function Terms() {
     },
     {
       title: '8. Intellectual Property',
-      body: 'The EasyAquatix name, logo, website content, and our software and guides are protected by copyright, trademark, and other intellectual property laws. You may not use our branding or content without our prior written permission.',
+      body: 'The Easy Aquatix name, logo, website content, and our software and guides are protected by copyright, trademark, and other intellectual property laws. You may not use our branding or content without our prior written permission.',
     },
     {
       title: '9. Disclaimer of Warranties',
@@ -45,15 +45,15 @@ export default function Terms() {
     },
     {
       title: '10. Limitation of Liability',
-      body: 'To the maximum extent permitted by law, EasyAquatix shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill, arising out of or related to your use of the website or products. Our total liability shall not exceed the amount you paid us, if any, for the product in question.',
+      body: 'To the maximum extent permitted by law, Easy Aquatix shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, or goodwill, arising out of or related to your use of the website or products. Our total liability shall not exceed the amount you paid us, if any, for the product in question.',
     },
     {
       title: '11. Indemnification',
-      body: 'You agree to indemnify and hold harmless EasyAquatix and its owners, employees, and agents from any claims, damages, liabilities, and expenses arising out of your use of the website or products or your violation of these Terms.',
+      body: 'You agree to indemnify and hold harmless Easy Aquatix and its owners, employees, and agents from any claims, damages, liabilities, and expenses arising out of your use of the website or products or your violation of these Terms.',
     },
     {
       title: '12. Governing Law',
-      body: 'These Terms are governed by the laws of the jurisdiction in which EasyAquatix operates, without regard to conflict of law principles. You agree to submit to the exclusive jurisdiction of the courts in that location for any disputes.',
+      body: 'These Terms are governed by the laws of the jurisdiction in which Easy Aquatix operates, without regard to conflict of law principles. You agree to submit to the exclusive jurisdiction of the courts in that location for any disputes.',
     },
     {
       title: '13. Changes to These Terms',
@@ -74,7 +74,7 @@ export default function Terms() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-gray-600 leading-relaxed mb-8">
             These Terms of Service ("Terms") govern your use of easyaquatix.com and the products and services
-            provided by EasyAquatix, including the Aquatic Sentinel software.
+            provided by Easy Aquatix, including the Aquatic Sentinel software.
           </p>
           <div className="space-y-8">
             {sections.map((section) => (

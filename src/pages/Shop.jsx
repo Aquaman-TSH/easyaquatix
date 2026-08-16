@@ -8,7 +8,7 @@ export default function Shop() {
 
   usePageMeta({
     title: 'Shop | Easy Aquatix',
-    description: 'Explore EasyAquatix software tools and guides to build and maintain the perfect aquarium.',
+    description: 'Explore Easy Aquatix software tools and guides to build and maintain the perfect aquarium.',
   })
   const filteredProducts = getProductsByCategory(activeCategory)
 

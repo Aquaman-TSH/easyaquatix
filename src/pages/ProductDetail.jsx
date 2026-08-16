@@ -36,7 +36,7 @@ export default function ProductDetail() {
         name: product.name,
         image: (typeof window !== 'undefined' ? window.location.origin : '') + product.image,
         description: product.description,
-        brand: { '@type': 'Brand', name: 'EasyAquatix' },
+        brand: { '@type': 'Brand', name: 'Easy Aquatix' },
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: product.rating,

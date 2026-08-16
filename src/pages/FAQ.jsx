@@ -70,7 +70,7 @@ const faqGroups = [
 export default function FAQ() {
   usePageMeta({
     title: 'FAQ | Easy Aquatix',
-    description: 'Answers to common questions about EasyAquatix and Aquatic Sentinel — getting started, pricing, platforms, smart device support, and support options.',
+    description: 'Answers to common questions about Easy Aquatix and Aquatic Sentinel — getting started, pricing, platforms, smart device support, and support options.',
   })
 
   return (
@@ -80,7 +80,7 @@ export default function FAQ() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Frequently Asked Questions</h1>
           <p className="mt-4 text-lg text-primary-100 max-w-2xl mx-auto">
-            Quick answers about EasyAquatix and Aquatic Sentinel
+            Quick answers about Easy Aquatix and Aquatic Sentinel
           </p>
         </div>
       </section>

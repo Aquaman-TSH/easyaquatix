@@ -12,7 +12,7 @@ export default function Contact() {
 
   usePageMeta({
     title: 'Contact Us | Easy Aquatix',
-    description: 'Have a question, feedback, or need support? Contact the EasyAquatix team — we respond within 24 hours.',
+    description: 'Have a question, feedback, or need support? Contact the Easy Aquatix team — we respond within 24 hours.',
   })
 
   const handleChange = (e) => {

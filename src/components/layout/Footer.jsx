@@ -68,7 +68,7 @@ export default function Footer() {
             <Link to="/" className="mb-4">
               <img
                 src="/images/logo/easyaquatix-logo.png"
-                alt="EasyAquatix"
+                alt="Easy Aquatix"
                 className="h-10 w-auto"
               />
             </Link>
@@ -136,7 +136,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; 2026 EasyAquatix. All rights reserved.
+            &copy; 2026 Easy Aquatix. All rights reserved.
           </p>
 
           {/* Social icons */}

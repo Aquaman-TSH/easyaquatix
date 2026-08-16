@@ -3,7 +3,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 export default function Privacy() {
   usePageMeta({
     title: 'Privacy Policy | Easy Aquatix',
-    description: "EasyAquatix's privacy policy — how we collect, use, and protect your information.",
+    description: "Easy Aquatix's privacy policy — how we collect, use, and protect your information.",
   })
 
   const sections = [
@@ -53,7 +53,7 @@ export default function Privacy() {
       <section className="py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-gray-600 leading-relaxed mb-8">
-            This Privacy Policy explains how EasyAquatix ("we," "us," or "our") collects, uses, and
+            This Privacy Policy explains how Easy Aquatix ("we," "us," or "our") collects, uses, and
             protects your information when you visit easyaquatix.com or use our products and services.
           </p>
           <div className="space-y-8">
