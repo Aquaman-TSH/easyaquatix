@@ -6,7 +6,7 @@ export default function Cart() {
   const { items, removeItem, updateQuantity, totalPrice, clearCart } = useCart()
 
   usePageMeta({
-    title: 'Your Cart | EasyAquatix',
+    title: 'Your Cart | Easy Aquatix',
     description: 'Review the items in your EasyAquatix cart and check out securely with Lemon Squeezy.',
   })
 

@@ -3,7 +3,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function CareGuides() {
   usePageMeta({
-    title: 'Care Guides | EasyAquatix',
+    title: 'Care Guides | Easy Aquatix',
     description: 'Comprehensive aquarium care guides for every level — cycling, water quality, maintenance, and advanced topics.',
   })
 

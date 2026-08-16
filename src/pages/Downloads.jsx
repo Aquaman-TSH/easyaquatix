@@ -3,7 +3,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Downloads() {
   usePageMeta({
-    title: 'Downloads | EasyAquatix',
+    title: 'Downloads | Easy Aquatix',
     description: 'Download the latest EasyAquatix software and resources, including Aquatic Sentinel for Windows.',
   })
 

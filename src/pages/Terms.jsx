@@ -2,7 +2,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Terms() {
   usePageMeta({
-    title: 'Terms of Service | EasyAquatix',
+    title: 'Terms of Service | Easy Aquatix',
     description: 'The terms of service that govern your use of easyaquatix.com and EasyAquatix products, including Aquatic Sentinel.',
   })
 

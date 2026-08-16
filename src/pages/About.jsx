@@ -3,7 +3,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function About() {
   usePageMeta({
-    title: 'About Us | EasyAquatix',
+    title: 'About Us | Easy Aquatix',
     description: 'EasyAquatix combines smart technology with expert knowledge to help aquarists maintain healthy, beautiful aquariums.',
   })
 

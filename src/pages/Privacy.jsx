@@ -2,7 +2,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Privacy() {
   usePageMeta({
-    title: 'Privacy Policy | EasyAquatix',
+    title: 'Privacy Policy | Easy Aquatix',
     description: "EasyAquatix's privacy policy — how we collect, use, and protect your information.",
   })
 

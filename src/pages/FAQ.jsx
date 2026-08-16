@@ -69,7 +69,7 @@ const faqGroups = [
 
 export default function FAQ() {
   usePageMeta({
-    title: 'FAQ | EasyAquatix',
+    title: 'FAQ | Easy Aquatix',
     description: 'Answers to common questions about EasyAquatix and Aquatic Sentinel — getting started, pricing, platforms, smart device support, and support options.',
   })
 

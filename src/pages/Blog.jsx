@@ -20,7 +20,7 @@ export default function Blog() {
   const categories = getAllCategories()
 
   usePageMeta({
-    title: 'Blog & Resources | EasyAquatix',
+    title: 'Blog & Resources | Easy Aquatix',
     description: 'Tips, guides, and insights to help you become a better aquarist — water quality, maintenance, smart automation, and more.',
   })
 

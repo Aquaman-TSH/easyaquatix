@@ -11,7 +11,7 @@ export default function Contact() {
   const [submitStatus, setSubmitStatus] = useState('idle') // 'idle' | 'loading' | 'success' | 'error'
 
   usePageMeta({
-    title: 'Contact Us | EasyAquatix',
+    title: 'Contact Us | Easy Aquatix',
     description: 'Have a question, feedback, or need support? Contact the EasyAquatix team — we respond within 24 hours.',
   })
 

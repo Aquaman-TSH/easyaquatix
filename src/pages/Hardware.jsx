@@ -38,7 +38,7 @@ const hardwareItems = [
 
 export default function Hardware() {
   usePageMeta({
-    title: 'Recommended Hardware | EasyAquatix',
+    title: 'Recommended Hardware | Easy Aquatix',
     description: 'The inexpensive aquarium hardware we actually recommend for beginners — digital thermometer, temperature monitor with alarm, submersible heater, and gravel vacuum.',
   })
 

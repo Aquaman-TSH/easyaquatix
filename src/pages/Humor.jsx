@@ -2,7 +2,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Humor() {
   usePageMeta({
-    title: 'Humor | EasyAquatix',
+    title: 'Humor | Easy Aquatix',
     description: 'Fishkeeping with a smile — comics, stories, and lighthearted takes on the aquarium hobby.',
   })
 

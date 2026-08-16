@@ -217,7 +217,7 @@ export default function BlogPost() {
   const encodedTitle = encodeURIComponent(post ? post.title : '')
 
   usePageMeta({
-    title: post ? `${post.title} | EasyAquatix` : 'Post Not Found | EasyAquatix',
+    title: post ? `${post.title} | Easy Aquatix` : 'Post Not Found | Easy Aquatix',
     description: post ? post.excerpt : 'The blog post you are looking for does not exist or has been removed.',
   })
 

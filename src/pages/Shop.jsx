@@ -7,7 +7,7 @@ export default function Shop() {
   const [activeCategory, setActiveCategory] = useState('all')
 
   usePageMeta({
-    title: 'Shop | EasyAquatix',
+    title: 'Shop | Easy Aquatix',
     description: 'Explore EasyAquatix software tools and guides to build and maintain the perfect aquarium.',
   })
   const filteredProducts = getProductsByCategory(activeCategory)

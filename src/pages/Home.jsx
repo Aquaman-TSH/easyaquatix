@@ -23,7 +23,7 @@ export default function Home() {
   const recentPosts = getRecentPosts(3)
 
   usePageMeta({
-    title: 'EasyAquatix - Smart Aquarium Solutions',
+    title: 'Easy Aquatix - Smart Aquarium Solutions',
     description: 'EasyAquatix helps aquarists monitor water parameters, track maintenance, and keep aquatic environments thriving with intelligent software and expert guides.',
   })
 

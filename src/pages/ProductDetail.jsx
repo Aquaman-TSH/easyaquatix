@@ -23,7 +23,7 @@ export default function ProductDetail() {
   const [lightbox, setLightbox] = useState(null)
 
   usePageMeta({
-    title: product ? `${product.name} | EasyAquatix` : 'Product Not Found | EasyAquatix',
+    title: product ? `${product.name} | Easy Aquatix` : 'Product Not Found | Easy Aquatix',
     description: product
       ? product.shortDescription
       : 'The product you are looking for does not exist or has been removed.',

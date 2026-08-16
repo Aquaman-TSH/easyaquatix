@@ -4,7 +4,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Support() {
   usePageMeta({
-    title: 'Support Center | EasyAquatix',
+    title: 'Support Center | Easy Aquatix',
     description: 'Find answers, get help, and learn how to make the most of EasyAquatix products. Contact support within 24 hours.',
   })
 

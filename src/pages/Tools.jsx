@@ -12,7 +12,7 @@ export default function Tools() {
   const [result, setResult] = useState(null)
 
   usePageMeta({
-    title: 'Aquarium Tools | EasyAquatix',
+    title: 'Aquarium Tools | Easy Aquatix',
     description: 'Handy aquarium calculators for water changes, medication dosing, and tank volume conversions.',
   })
 
